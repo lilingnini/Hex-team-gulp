@@ -1,0 +1,384 @@
+.main{
+    @include md{
+        padding-top: 79px;
+        padding-bottom: 66px;  
+    }
+    &-box{
+        background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/bg_home_mobile.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        padding-top: 85px;
+        padding-bottom: 85px;
+
+        @include md{
+            padding-top: 126px;
+            padding-bottom: 138px;
+            background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/bg_home.jpg);
+        }
+    }
+    &-card{
+        width: 336px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        .square{
+            width: 10px;
+            height: 10px;
+            background-color: #fff;
+        }
+        @include md{
+            width: 650px;
+            padding: 51px 50px;
+            h1{
+                font-size: 48px;
+                line-height: 70px;
+            }
+        }
+    }
+}
+
+.feature{
+    h3{
+        position: relative;
+        text-align: center;
+        &::after {
+          content: "";
+          position: absolute;
+          left:44%;
+          bottom: 0;
+          width: 50px;
+          height: 2px;
+          background-image: linear-gradient(90deg, #62DB54);
+      } 
+        @include md{
+          font-size: 28px;
+          line-height: 40px;
+          text-align: left;
+          &::after {
+            content: "";
+            left: 0%;
+        } 
+    }
+}
+    &-card{
+    border:solid 1px $primary;
+    border-radius: 12px;
+        &:hover{
+            border:solid 1px #62DB54;
+            background-color:$info;
+            opacity: 1;
+            span{
+                background: linear-gradient(#09ACF5, #62DB54);
+                -webkit-background-clip: text;
+                color: transparent; 
+            }
+        }
+    }
+}
+
+    
+.process,.learn{
+    &-card{
+        border:solid 1px $warning;
+        border-radius: 12px;
+        &-item{
+            line-height: 56px;
+            top: -24px;
+            left:48px;
+        }
+        &:hover{
+            border:solid 1px #62DB54;
+            background-color:$info;
+            opacity: 1;
+            }
+    }
+}
+
+.recommend{
+    &-card{
+        border:solid 1px $primary;
+        background-color: $primary;
+        border-radius: 12px;
+        &:hover{
+            border:solid 1px #62DB54;
+            opacity: 1;
+            }
+        &-item{
+            img{
+                border-radius: 50px;
+            }
+        }
+    }
+}
+
+.info{
+    &-card{
+        &-text{
+            opacity: 0.9;
+        }
+        opacity: 0.5;
+        background-size:cover;
+        background-position: center;
+        @include md{
+            padding-top: 217px;
+            padding-bottom: 217px;
+            padding-left: 48px;
+            padding-right: 48px;
+        }
+        h4{
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 20%;
+                height: 2px;
+                background-image: linear-gradient(90deg, $warning);
+            } 
+        }
+
+        &:hover{
+            opacity: 1;
+            span{
+                color:$success;
+            }
+            h4{
+                &::after {
+                    background-image: linear-gradient(90deg, $success);
+                } 
+        }
+    }
+        &-a{
+            background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info01.jpg);
+        }
+        &-b{
+            background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info02.jpg);
+            }
+        
+        &-c{
+            background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info03.jpg);
+        }
+        &-d{
+            background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info04.jpg);
+            }   
+        }
+}
+
+
+.artical{
+    h3{
+        margin-bottom: 40px;
+    }
+    .card-body{
+        @include md{
+            padding: 32px;
+        }
+    }
+    
+    .square-rounded {
+        display: none;
+        width: 32px;
+        height: 32px;
+        &-topLeft {
+          border-top: 2px solid #62DB54;
+          border-left: 2px solid #62DB54;
+          border-top-left-radius: 10px;
+        }
+        &-topRight {
+          border-top: 2px solid #62DB54;
+          border-right: 2px solid #62DB54;
+          border-top-right-radius: 10px;
+        }
+        &-bottomLeft {
+          border-bottom: 2px solid #62DB54;
+          border-left: 2px solid #62DB54;
+          border-bottom-left-radius: 10px;
+        }
+        &-bottomRight {
+          border-bottom: 2px solid #62DB54;
+          border-right: 2px solid #62DB54;
+          border-bottom-right-radius: 10px;
+        }
+      }
+    .card:hover {
+      .square-rounded {
+        display: block;
+      }
+    }
+}
+
+.feedback{
+    background-color: $dark;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include md{
+        background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/bg_share.jpg);
+    }
+
+    .swiper{
+        width: 100%;
+        height: 532px;
+        @include md{
+            height: 429px;
+        } 
+
+        &-box{
+            top: 0;
+            left: 10px;
+            width: 100%;
+            height: 50%;
+            border-radius: 24px;
+            // margin-bottom: 100px;
+            &::after {
+                content: '';
+                position: absolute;
+                border: 1px solid #7C7E77;
+                border-radius: 24px;
+                width: 100%;
+                height: 100%;
+                top: 5px;
+                left: -5px;
+                z-index: -1;
+            }
+            @include md{
+                width: 60%;
+                height: 90%;
+                &::after {
+                    top: 10px;
+                    left: -10px;
+                }
+            }
+            &-img{
+                width: 100%;
+                height: 100%;
+                border-radius: 24px;
+                object-fit: cover;
+            }
+        }
+
+        &-card{
+            width: 100%;
+            border-radius: 24px 24px 24px 0;
+            bottom: -5px;
+            right: 0;
+            color: $light;
+
+            @include md{ 
+                width: 45%;
+                padding: 32px;
+                bottom: 0;
+                right: 0;
+                margin-bottom: 0;
+            }
+            &-img {
+                position: absolute;
+                border-radius: 50%;
+                right: 32px;
+                bottom: 100%;
+                transform: translateY(50%);
+            @include md{
+                }
+            }
+        }
+
+        &-buttons {
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+            @include md{
+                left: 30%;
+                padding-top: 24px;
+            }
+        }
+
+    // 改掉原本的箭頭，使用偽元素做蓋掉      
+        &-button-next:after, &-button-prev:after {
+            content: '';
+        }
+        &-button-next, &-button-prev {
+            // 改成自己想要的箭頭位置,不然原本swiper有自己的定位位置position跟mt
+            position: initial;
+            margin-top: 0;
+            width: 24px;
+            height: 24px;
+            color: $success;
+        }
+        &-pagination {
+            // 改成自己想要的箭頭位置,不然原本swiper有自己的定位位置position跟width
+            position: initial;
+            width: auto;
+            opacity: initial;
+            .swiper-pagination-bullet {
+            background-color: $success;
+            opacity: initial;
+            &-active {
+                width: 16px;
+                border-radius: 100px;
+            }
+            }
+
+        }
+    }
+}
+
+
+.join{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    h3{
+        &::after {
+            display:none;
+      } 
+      }
+      @include md{
+            padding-top: 80px;
+            padding-bottom: 80px;
+            &-box{
+                width: 966px;
+            }
+        }
+    }
+
+    
+// 共用變數
+
+@include md{
+    .feature,.process,.learn,.recommend,.artical,.feedback{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+.border-radius{
+    border-radius: 24px;
+}
+
+.title-line{
+    &::after {
+        content: "";
+        left: 44%;
+        bottom: 0;
+        width: 50px;
+        height: 2px;
+        background-image: linear-gradient(90deg, $success);
+    } 
+    @include md{
+        &::after {
+            content: "";
+            left: 48%;
+        } 
+    }
+}
+
+.gradient{
+    background: linear-gradient(#09ACF5, #62DB54);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.btn-gradient{
+    background: linear-gradient(104deg, #09acf5, #62db54);
+  }

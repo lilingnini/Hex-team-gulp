@@ -1,0 +1,60 @@
+*,*::before,*::after{
+  box-sizing: border-box;
+  // outline: 1px solid #fff;
+}
+body{
+   color: #fff;
+   line-height: 1.5;
+}
+a{
+  text-decoration: none;
+  display: block;
+  &:hover{
+    opacity: 0.8;
+  }
+ }
+
+ img{
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+h2,ul,li,p{
+  margin: 0;
+}
+
+h1{
+  font-size: 48px;
+  line-height: 70px;
+}
+
+h3{
+  font-size: 24px;
+  line-height: 35px;
+  position: relative;
+  text-align: center;
+  &::after {
+    content: "";
+    position: absolute;
+    left:44%;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background-image: linear-gradient(90deg, #62DB54);
+} 
+  @include md{
+    font-size: 28px;
+    line-height: 40px;
+    text-align: left;
+    &::after {
+      content: "";
+      left: 0%;
+  } 
+}
+}
+h4{
+  line-height: 35px;
+}
+
+
