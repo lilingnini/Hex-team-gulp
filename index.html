@@ -5,418 +5,465 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Boostrap Index</title>
+    <title>Index</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style/all.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-4">
-      <div class="container align-items-center">
-        <h2><a class="navbar-brand" href="./index.html"><img class="d-inline-block align-text-top" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/logo.svg" alt="logo" width="175" height="42"></a></h2>
-        <button class="navbar-toggler text-success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary py-0 border-bottom border-dark">
+      <div class="container">
+          <a class="navbar-brand flex-grow-1" href="#"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/logo.svg" alt="logo"></a>
+          <div class="d-flex align-items-center">
+          <i class="fa-solid fa-magnifying-glass fs-4 me-4 d-lg-none"></i> 
+          <div class="d-flex justify-content-sm-between align-items-center">
+            <button class="navbar-toggler text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">              
+              <span class="navbar-toggler-icon text-dark"></span>
+            </div>
+          </div>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-        <ul class="nav navbar-nav align-items-center ">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">首頁</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./pages.html">課程介紹</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><span class="material-icons  align-middle pr-6">
-              account_circle
-              </span>登入</a>
-          </li>
-        </ul>
+        <div class="collapse navbar-collapse justify-content-md-end" id="navbarNav">
+          <div class="search-bar px-5 border-dark border-start d-none d-lg-block">
+            <form class="d-flex align-items-center">
+              <input class="form-control me-4 py-40 bg-primary border-primary border-0" type="search" placeholder="搜尋作品名稱、藝術家名稱" aria-label="Search">
+              <i class="fa-solid fa-magnifying-glass fs-4"></i> 
+            </form>
+          </div>
+          <ul class="navbar-nav">
+            <li class="nav-item border-dark border-start">
+              <a class="nav-link px-lg-5 py-40 text-center fw-bold text-dark" aria-current="page" href="#">探索</a>
+            </li>
+            <li class="nav-item  border-dark border-start">
+              <a class="nav-link px-lg-5 py-40 text-center fw-bold text-dark" href="#">市值</a>
+            </li>
+            <li class="nav-item border-dark border-start">
+              <a class="nav-link ps-lg-5 py-40 d-none d-lg-block" href="#"><i class="nav-wallet fa-solid fa-wallet text-dark"></i></a>
+              <a class="nav-link py-40 d-lg-none text-center fw-bold text-dark" href="#">連結錢包</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
 
-
-    <main class="main bg-secondary">
-  <div class="main-box container row justify-content-center align-items-center" >
-    <div class="main-card col-6 text-center border border-white  position-relative">
-      <div class="square position-absolute top-0 start-0 translate-middle"></div>
-      <div class="square position-absolute top-0 start-100 translate-middle"></div>
-      <div class="square position-absolute top-100 start-0 translate-middle"></div>
-      <div class="square position-absolute top-100 start-100 translate-middle"></div>
-      <ul class="list-unstyled">
-        <li><h1 class="fz-24 fw-bold gradient">全台最豐富的程式家教</h1></li>
-        <li><h1 class="fz-24 text-white fw-bold mb-4">在實踐中化理想為現實</h1></li>
-        <li><p class="fz-18 text-white">全台最專業師資｜到府程式家教｜客製化課程</p></li>
-      </ul>
+    <main class="recommend">
+    <div class="container">
+        <div class="recommend-box d-flex border border-dark bg-info">
+            <div class="recommend-title bg-dark pt-4 px-4 d-none d-md-block d-lg-block">
+                <h1 class="text-info">Recommend <span class="fs-6 lh-26">推薦系列</span></h1>
+            </div>
+            <div class="d-md-flex">
+                <div  class="recommend-card d-lg-flex">
+                    <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art01.jpg" alt="Kemus Wu">
+                    <div class="recommend-card-item px-md-4 pb-md-4">
+                        <h3 class="fz-18 mb-2">Kemus Wu</h2>
+                        <h2 class="fs-sm-4 mb-4 fw-bold">瞳孔:流動的脈絡</h3>
+                        <p>眼睛，總是吸引著我們的注意力，看、被看，也許眼睛裡有著從另一個世界看我們的世界。</p>
+                        <div class="recommend-card-btn d-flex justify-content-end align-items-md-end">
+                        <button class="btn-triangle bg-info p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+        <ul class="list-unstyled d-lg-flex flex-md-no-wrap border border-top-0 border-dark bg-info">
+            <li class="recommend-card-min d-lg-flex flex-lg-row-reverse">
+                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art02.jpg" alt="Kemus Wu">
+                <div class="recommend-card-min-item px-lg-4 d-flex flex-column justify-content-between">
+                    <h3 class="fz-18 mb-2">Joanne</h2>
+                    <h2 class="fs-sm-4 mb-4 fw-bold">海洋波度</h3>
+                    <p>海洋的奧秘向我們揭示了深不可測的一面，它的深度——反映了我們的恐懼、同時也吸引著我們。<br></br></p>
+                    <div class="recommend-card-btn d-flex justify-content-end align-items-md-end">
+                        <button class="btn-triangle bg-info p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+                    </div>
+                </div>
+            </li>
+            <li class="recommend-card-min d-lg-flex flex-lg-row-reverse">
+                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art21.jpg" alt="Kemus Wu">
+                <div class="recommend-card-min-item px-lg-4 d-flex flex-column justify-content-between">
+                    <h3 class="fz-18 mb-2">Michael</h2>
+                    <h2 class="fs-sm-4 mb-4 fw-bold">我家窗前的鳥</h3>
+                    <p>家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
+                    <div class="recommend-card-btn d-flex justify-content-end align-items-md-end">
+                        <button class="btn-triangle bg-info p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </div>
-  </div>
 </main>
-<section class="feature py-40 bg-primary">
-  <div class="container">
-    <div class="row align-items-center justify-content-between"> 
-        <div class="col-12 col-md-12 col-lg-3 mb-4 text-center pl-0">
-          <h3 class="py-3 fz-24">手把手帶你<br>親自到家教到會</h3>
-        </div>
-        <div  class="col-12 col-md-12 col-lg-3">
-          <div class="feature-card px-4 py-5  mb-4 mb-md-0 text-center">
-            <span class="material-icons mb-4 fs-1">
-            code
-            </span>
-            <p class="mb-3 fz-18">超過 100 種專業課程</p>
-            <p>學習標準化的電腦形式語言<br>培養運算思維和邏輯素養</p>
-          </div>
-        </div>
-        <div  class="col-12 col-md-12 col-lg-3">
-          <div class="feature-card px-4 py-5  mb-4 mb-md-0 text-center">
-            <span class="material-icons mb-4 fs-1">
-            rocket_launch
-            </span>
-            <p class="mb-3 fz-18">高效學習</p>
-            <p>客製化專屬課表<br> 讓學習變簡單</p>
-          </div>
-        </div >
-        <div  class="col-12 col-md-12 col-lg-3">
-          <div class="feature-card  px-4 py-5 mb-4 mb-md-0 text-center">
-            <span class="material-icons mb-4 fs-1" >
-            location_on</span>
-            <p class="mb-3 fz-18">指定地點</p>
-            <p>專業老師到你指定的地點<br> 一對一高效學習</p>
-          </div>
-        </div >
-      </div>
-  </div>
-</section>
-<section class="process py-40 bg-secondary">
-  <h3 class="title-line mb-74 px-14 py-3 text-center">預期上課流程</h3>
+<section class="ranking">
     <div class="container">
-      <ul class="list-unstyled row align-items-center justify-content-between"> 
-        <li class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="process-card p-5 position-relative">
-            <p class="process-card-item display-5 px-2 position-absolute text-success fw-bold bg-secondary">01</p>
-            <h4 class="mb-3">預約</h4>
-            <p>線上預約指定課程與老師<br>由老師安排專屬課程</p>
-          </div>
-        </li>
-        <li class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="process-card p-5 position-relative">
-            <p class="process-card-item display-5 px-2 position-absolute text-success fw-bold bg-secondary">02</p>
-            <h4 class="mb-3">付款</h4>
-            <p>支援各種支付方式<br>提供12期分期付款</p>
-          </div>
-        </li>
-        <li class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="process-card p-5 position-relative">
-            <p class="process-card-item display-5 px-2 position-absolute text-success fw-bold bg-secondary">03</p>
-            <h4 class="mb-3">上課</h4>
-            <p>地點由您指定<br>密集性一對一教學</p>
-          </div>
-        </li>
-        <li class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="process-card p-5 position-relative">
-            <p class="process-card-item display-5 py-8 position-absolute text-success fw-bold bg-secondary">04</p>
-            <h4 class="mb-3">提供滿意度</h4> 
-            <p>提供課程滿意度及回饋<br>讓我們持續成長與進步</p>
-          </div>
-        </li>
-      </ul>
+        <div class="d-flex justify-content-between  py-md-3 py-sm-2 border-bottom border-dark position-relative">
+            <div class="d-flex align-items-end">            
+                <h2 class="fs-1 fs-sm-2 me-md-3">Ranking</h2> 
+                <p class="fs-5 d-none d-md-block d-lg-block ">市價排行榜</p> 
+            </div>
+            <button class="btn-triangle bg-primary border-0 position-absolute bottom-0 end-0 p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+        </div>
+        <div class="ranking-box pt-4 pt-md-5">
+            <ul class="row g-lg-4 list-unstyled mb-md-4">
+                <li class="col-lg-4 col-md-12">
+                    <div class="ranking-card d-none  d-lg-block d-flex border border-dark bg-info p-0 position-relative">
+                        <div class="ranking-card-list text-center position-absolute top-0 left-0  border-dark"><p class="fs-2 px-2 py-2 bg-info border-bottom border-end border-dark">1</p></div>
+                        <div class="ranking-card-item">
+                            <div class="ranking-card-img position-relative ">
+                                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art04.jpg" alt="ranking" class="card-img-top">  
+                                <div class="ranking-card-button position-absolute bottom-0 end-0">
+                                    <button class="btn-triangle bg-info p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+                                    <div class="triangle"></div>
+                                </div>
+                            </div>
+                            <h3 class="fz-18 py-3 px-2 border-bottom border-dark">散步遇到的女人</h3>
+                            <div class="d-flex py-2 justify-content-between align-items-center">
+                                <p class="ps-2">Zoe Jiang</p>
+                                <i class="fa-brands fa-ethereum fs-6 pe-2">300</i>
+                            </div> 
+                        </div>
+                    </div>
+                </li>
+                <li class="col-lg-4 col-md-12">
+                    <div class="ranking-card d-none  d-lg-block d-flex border border-dark bg-info p-0 position-relative">
+                        <div class="ranking-card-list text-center position-absolute top-0 left-0  border-dark"><p class="fs-2 px-2 py-2 bg-info border-bottom border-end border-dark">2</p></div>  
+                        <div class="ranking-card-item">
+                            <div class="ranking-card-img position-relative ">
+                                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art05.jpg" alt="ranking" class="card-img-top">  
+                                <div class="ranking-card-button position-absolute bottom-0 end-0">
+                                    <button class="btn-triangle bg-info p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+                                    <div class="triangle"></div>
+                                </div>
+                            </div>
+                            <h3 class="fz-18 py-3 px-2 border-bottom border-dark">爆炸頭的母親</h3>
+                            <div class="d-flex py-2 justify-content-between align-items-center">
+                                <p class="ps-2">Yui</p>
+                                <i class="fa-brands fa-ethereum fs-6 pe-2">300</i>
+                            </div> 
+                        </div>
+                    </div>
+                </li>
+                <li class="col-lg-4 col-md-12">
+                    <div class="ranking-card d-none d-lg-block d-flex border border-dark bg-info p-0 position-relative">
+                        <div class="ranking-card-list text-center position-absolute top-0 left-0  border-dark"><p class="fs-2 px-2 py-2 bg-info border-bottom border-end border-dark" >3</p></div>
+                        <div class="ranking-card-item">
+                            <div class="ranking-card-img position-relative ">
+                                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art06.jpg" alt="ranking" class="card-img-top">  
+                                <div class="ranking-card-button position-absolute bottom-0 end-0">
+                                    <button class="btn-triangle bg-info p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+                                    <div class="triangle"></div>
+                                </div>
+                            </div>
+                            <h3 class="fz-18 py-3 px-2 border-bottom border-dark">夏天的時候</h3>
+                            <div class="d-flex py-2 justify-content-between align-items-center">
+                                <p class="ps-2">Bug Lin</p>
+                                <i class="fa-brands fa-ethereum fs-6 pe-2">300</i>
+                            </div> 
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+<!-- 小尺寸 -->
+            <ul  class="row g-4 list-unstyled">
+                <li class="col-12 col-md-6 col-lg-4" >
+                    <div class="ranking-card-min d-flex border border-dark bg-info  d-sm-flex align-items-center d-lg-none" >
+                        <div class="ranking-card-min-item d-flex align-items-center">
+                            <p class="px-2 py-4">1</p>
+                            <a href="#" class="d-block img-hover position-relative">
+                                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art04.jpg" alt="Zoe Jiang" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="ranking-card-text flex-grow-1">
+                            <h3 class="fz-18 p-lg-3 p-sm-2 border-bottom border-dark">散步遇到的女人</h3>
+                            <div class="d-flex py-2 justify-content-between align-items-center" width="275">
+                                <p class="px-3">Zoe Jiang</p>
+                                <i class="fa-brands fa-ethereum fs-6 pe-2">300</i>
+                            </div> 
+                        </div>
+                    </div>
+                </li>
+                <li class="col-12 col-md-6 col-lg-4" >
+                    <div class="ranking-card-min d-flex border border-dark bg-info d-flex align-items-center d-lg-none" >
+                        <div class="ranking-card-min-item d-flex align-items-center">
+                            <p class="px-2 py-4">2</p>
+                            <a href="#" class="d-block img-hover position-relative">
+                                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art05.jpg" alt="Zoe Jiang" class="img-fluid">
+                                <div class="triangle position-absolute"></div>
+                            </a>
+                        </div>
+                        <div class="ranking-card-text flex-grow-1">
+                            <h3 class="fz-18 p-lg-3 p-sm-2 border-bottom border-dark">爆炸頭的母親</h3>
+                            <div class="d-flex py-2 justify-content-between align-items-center" width="275">
+                                <p class="px-3">Yui</p>
+                                <i class="fa-brands fa-ethereum fs-6 pe-2">300</i>
+                            </div> 
+                        </div>
+                    </div>
+                </li>
+                <li class="col-12 col-md-6 col-lg-4" >
+                    <div class="ranking-card-min border border-dark bg-info d-flex align-items-center d-lg-none" >
+                        <div class="ranking-card-min-item d-flex align-items-center">
+                            <p class="px-2 py-4">3</p>
+                            <a href="#" class="d-block img-hover position-relative">
+                                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art06.jpg" alt="Zoe Jiang" class="img-fluid">
+                                <div class="triangle position-absolute"></div>
+                            </a>
+                        </div>
+                        <div class="ranking-card-text flex-grow-1">
+                            <h3 class="fz-18 p-lg-3 p-sm-2 border-bottom border-dark">夏天的時候</h3>
+                            <div class="d-flex py-2 justify-content-between align-items-center" width="275">
+                                <p class="px-3">Bug Lin</p>
+                                <i class="fa-brands fa-ethereum fs-6 pe-2">300</i>
+                            </div> 
+                        </div>
+                    </div>
+                </li>
+                <li class="col-12 col-md-6 col-lg-4" >
+                    <div class="ranking-card-min border border-dark bg-info  d-flex align-items-center" >
+                        <div class="ranking-card-min-item d-flex align-items-center">
+                            <p class="px-2 py-4">4</p>
+                            <a href="#" class="d-block img-hover position-relative">
+                                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art13.jpg" alt="Zoe Jiang" class="img-fluid">
+                                <div class="triangle position-absolute"></div>
+                            </a>
+                        </div>
+                        <div class="ranking-card-text flex-grow-1">
+                            <h3 class="fz-18 p-lg-3 p-sm-2 border-bottom border-dark">追求者送我的花</h3>
+                            <div class="d-flex py-2 justify-content-between align-items-center" width="275">
+                                <p class="px-3">Michael</p>
+                                <i class="fa-brands fa-ethereum fs-6 pe-2">300</i>
+                            </div> 
+                        </div>
+                    </div>
+                </li>
+                <li class="col-12 col-md-6 col-lg-4" >
+                    <div class="ranking-card-min border border-dark bg-info d-flex align-items-center" >
+                        <div class="ranking-card-min-item d-flex align-items-center">
+                            <p class="px-2 py-4">5</p>
+                            <a href="#" class="d-block img-hover position-relative">
+                                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art07.jpg" alt="Zoe Jiang" class="img-fluid">
+                                <div class="triangle position-absolute"></div>
+                            </a>
+                        </div>
+                        <div class="ranking-card-text flex-grow-1">
+                            <h3 class="fz-18 p-lg-3 p-sm-2 border-bottom border-dark">今天釣到的魚</h3>
+                            <div class="d-flex py-2 justify-content-between align-items-center" width="275">
+                                <p class="px-3">Wei JJ</p>
+                                <i class="fa-brands fa-ethereum fs-6 pe-2">300</i>
+                            </div> 
+                        </div>
+                    </div>
+                </li>
+                <li class="col-12 col-md-6 col-lg-4" >
+                    <div class="ranking-card-min border border-dark bg-info d-flex align-items-center" >
+                        <div class="ranking-card-min-item d-flex align-items-center">
+                            <p class="px-2 py-4">6</p>
+                            <a href="#" class="d-block img-hover position-relative">
+                                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art08.jpg" alt="Zoe Jiang" class="img-fluid">
+                                <div class="triangle position-absolute"></div>
+                            </a>
+                        </div>
+                        <div class="ranking-card-text flex-grow-1">
+                            <h3 class="fz-18 p-lg-3 p-sm-2 border-bottom border-dark">人生中的貓咪們</h3>
+                            <div class="d-flex py-2 justify-content-between align-items-center" width="275">
+                                <p class="px-3">Even Lai</p>
+                                <i class="fa-brands fa-ethereum fs-6 pe-2">300</i>
+                            </div> 
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+  
     </div>
+
 </section>
-<section class="learn py-40 bg-primary">
-  <div class="container">
-    <h3 class="title-line mb-5 px-14 py-3 text-center">你想要學習的程式，都在這裡</h3>
-    <div class="swiper learn-swiper position-relative">
-      <div class="swiper-wrapper align-items-center justify-content-between text-center">
-          <div class="swiper-slide learn-card py-3">
-            <p>JavaScript</p>
-          </div>
-          <div class="swiper-slide learn-card py-3">
-            <p>HTML/CSS</p>
-          </div>
-          <div class="swiper-slide learn-card py-3">
-            <p>SQL</p>
-          </div>
-          <div class="swiper-slide learn-card py-3">
-            <p>Java</p>
-          </div>
-          <div class="swiper-slide learn-card py-3">
-            <p>SQL</p>
-          </div>
-          <div class="swiper-slide learn-card py-3">
-            <p>Bash/Shell</p>
-          </div>
-          <div class="swiper-slide learn-card py-3">
-            <p>Python</p>
-          </div>
-          <div class="swiper-slide learn-card py-3">
-            <p>Python</p>
-          </div>
-          <div class="swiper-slide learn-card py-3">
-            <p>PHP</p>
-          </div>
-          <div class="swiper-slide learn-card py-3">
-            <p>C++</p>
-          </div>
-    </div>
-</section>
-<section class="recommend py-40 bg-dark">
-  <h3 class="title-line mb-5 px-14 py-3 text-center">熱門推薦課程</h3>
+<section class="artist">
     <div class="container">
-      <ul class="list-unstyled row align-items-center justify-content-between mb-5"> 
-        <li class="col-12 col-md-6 col-lg-3 mb-4 ">
-          <div class="recommend-card">
-            <div class="recommend-card-item text-center p-4">
-              <img class="mb-2" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/teacher01.jpg" alt="teacher" height="100" width="100">
-              <p>Belinda</p>
+        <div class="d-flex justify-content-between py-md-3 py-sm-2 border-bottom border-dark position-relative mb-lg-5 mb-md-5 mb-4">
+            <div class="d-flex align-items-end">            
+                <h2 class="fs-1 fs-sm-2 me-md-3">Artist</h2> 
+                <p class="fs-5 d-none d-md-block d-lg-block ">熱門藝術家</p> 
             </div>
-            <div class="recommend-card-text pb-32  p-4 border-bottom">
-              <h5 class="fw-bold">基礎前端 - HTML</h5>
-              <br>
-              <p class="text-success mb-2">前端語言</p>
-              <p>帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言與生活隨處可見的例子...</p>
+            <button class="btn-triangle bg-primary border-0 position-absolute bottom-0 end-0 p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+        </div>
+
+        <!-- swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper pb-lg-5">
+                <!-- <div class="swiper-slide">
+                    <div class="d-flex flex-column d-lg-block">
+                        <div class="swiper-box position-relative">
+                            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/artist01.jpg" alt="artist">
+                            <h3 class="text-white">Antony<br>Wu</h3>
+                            <button class="btn-triangle bg-info p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+                            <p class="bg-white d-lg-block d-md-block">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+                        </div>
+                        <p class="bg-white d-lg-none d-md-none">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+                    </div>
+                </div> -->
+              <div class="swiper-slide d-flex text-center">
+                <div class="d-flex flex-column d-lg-block">
+                    <div class="swiper-box position-relative">
+                        <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/artist01.jpg" alt="artist" class="img-fluid">
+                        <h3 >Antony<br>Wu</h3>
+                        <button class="btn-triangle bg-info p-0 position-absolute" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+                        <div class="triangle"></div>  
+                                  
+                    </div>
+                </div>
             </div>
-            <div class="recommend-card-price d-flex align-items-center justify-content-center py-3 px-4">
-              <p class="pe-2">50分鐘</p>
-              <p class="fz-32">NT$1600</p>
+            <div class="swiper-slide">
+                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/artist02.jpg" alt="artist" class="img-fluid">
             </div>
-          </div>
-        </li>
-        <li class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="recommend-card">
-            <div class="recommend-card-item text-center p-4">
-              <img class="mb-2" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/teacher02.jpg" alt="teacher" height="100" width="100">
-              <p>Guava</p>
+            <div class="swiper-slide">
+                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/artist01.jpg" alt="artist" class="img-fluid">
             </div>
-            <div class="recommend-card-text pb-32 p-4 border-bottom">
-              <h5 class="fw-bold">2022 Python 全攻略｜從入門到實務</h5>
-              <p class="text-success mb-2">後端語言</p>
-              <p>Python支援多種程式設計範式，包括函數式、指令式、反射式、結構化和物件導向程式設計，它擁有動態...</p>
+              <div class="swiper-slide"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/artist05.jpg" alt="artist" class="img-fluid"></div>
+            </div>        
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>       
+<section class="artwork">
+    <div class="container">
+        <div class="d-flex justify-content-between  py-md-3 py-sm-2 border-bottom border-dark position-relative">
+            <div class="d-flex align-items-end">            
+                <h2 class="fs-1 fs-sm-2 me-md-3">Artwork</h2> 
+                <p class="fs-5 d-none d-md-block d-lg-block">最新藝術品</p> 
             </div>
-            <div class="recommend-card-price d-flex align-items-center justify-content-center py-3 px-4">
-              <p class="pe-2">50分鐘</p>
-              <p class="fz-32">NT$2200</p>
+            <button class="btn-triangle bg-primary border-0 position-absolute bottom-0 end-0 p-0" width="132"><a href="./page.html" class="fz-18 py-2 px-5" >more</a></button>
+        </div>
+    <div class="row py-5" data-masonry='{"percentPosition": true }'>
+      <div class="col-6 col-md-6 col-lg-3 mb-5">
+        <div class="artwork-img bg-white p-2 p-lg-4 position-relative">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art09.jpg?raw=true" alt="artwork" class="img-fluid card-img-top">
+            <div class="artwork-img-button position-absolute">
+                <button class="btn-triangle bg-info p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+                <div class="triangle"></div>        
             </div>
-          </div>
-        </li>
-        <li class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="recommend-card">
-            <div class="recommend-card-item text-center p-4">
-              <img class="mb-2" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/teacher03.jpg" alt="teacher" height="100" width="100">
-              <p>Joe</p>
+        </div>
+        <h4 class="fs-6 py-3 border-bottom border-dark fw-bold">區塊戀-他的私生活</h4>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3 mb-5">
+        <div class="artwork-img bg-white p-2 p-lg-4 position-relative">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art10.jpg?raw=true" alt="artwork" class="img-fluid card-img-top">
+            <div class="artwork-img-button position-absolute">
+                <button class="btn-triangle bg-info p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+                <div class="triangle"></div>
             </div>
-            <div class="recommend-card-text pb-32 p-4 border-bottom">
-              <h5 class="fw-bold">活用 Line Bot ｜APP 開發到上架完整實戰攻略</h5>
-              <p class="text-success mb-2">行動應用開發</p>
-              <p>帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言與生活隨處可見的例子...</p>
+        </div>
+        <p class="py-3 border-bottom border-dark fw-bold">夏娃的醜聞</p>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3 mb-5">
+        <div class="artwork-img bg-white p-2 p-lg-4 position-relative">
+          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art02.jpg?raw=true" alt="artwork" class="img-fluid card-img-top">
+          <div class="artwork-img-button position-absolute">
+            <button class="btn-triangle bg-info p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+            <div class="triangle"></div>
+        </div>
+        </div>
+        <p class="py-3 border-bottom border-dark fw-bold">藍色啤酒海</p>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3 mb-5">
+        <div class="artwork-img bg-white p-2 p-lg-4 position-relative">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art11.jpg?raw=true" alt="artwork" class="img-fluid card-img-top">
+            <div class="artwork-img-button position-absolute">
+                <button class="btn-triangle bg-info p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+                <div class="triangle"></div>
             </div>
-            <div class="recommend-card-price d-flex align-items-center justify-content-center py-3 px-4">
-              <p class="pe-2">50分鐘</p>
-              <p class="fz-32">NT$1800</p>
+        </div>
+        <p class="py-3 border-bottom border-dark fw-bold">沒有人愛我</p>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3 mb-5">
+        <div class="artwork-img bg-white p-2 p-lg-4 position-relative">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art12.jpg?raw=true" alt="artwork" class="img-fluid card-img-top">
+            <div class="artwork-img-button position-absolute">
+                <button class="btn-triangle bg-info p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+                <div class="triangle"></div>
             </div>
-          </div>
-        </li>
-        <li class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="recommend-card">
-            <div class="recommend-card-item text-center p-4">
-              <img class="mb-2" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/teacher04.jpg" alt="teacher" height="100" width="100">
-              <p>Lina</p>
+        </div>
+        <p class="py-3 border-bottom border-dark fw-bold">不哭不哭眼淚是珍珠</p>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3 mb-5">
+        <div class="artwork-img bg-white p-2 p-lg-4 position-relative">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art27.jpg?raw=true" alt="artwork" class="img-fluid card-img-top">
+            <div class="artwork-img-button position-absolute">
+                <button class="btn-triangle bg-info p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+                <div class="triangle"></div>
             </div>
-            <div class="recommend-card-text pb-32  p-4 border-bottom">
-              <h5 class="fw-bold">Linux 零基礎七天入門｜入門到實務</h5>
-              <p class="text-success mb-2">作業系統與伺服器</p>
-              <p>Linux是一種自由和開放原始碼的類UNIX作業系統，作業系統中包含了許多使用者圖形介面和其他實用...</p>
+        </div>
+        <p class="py-3 border-bottom border-dark fw-bold">我真的受傷了</p>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3 mb-5">
+        <div class="artwork-img bg-white p-2 p-lg-4 position-relative">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art03.jpg?raw=true" alt="artwork" class="img-fluid card-img-top">
+            <div class="artwork-img-button position-absolute">
+                <button class="btn-triangle bg-info p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+                <div class="triangle"></div>
             </div>
-            <div class="recommend-card-price d-flex align-items-center justify-content-center py-3 px-4">
-              <p class="pe-2">50分鐘</p>
-              <p class="fz-32">NT$1100</p>
+        </div>
+        <p class="py-3 border-bottom border-dark fw-bold">十分鐘就到</p>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3 mb-5">
+        <div class="artwork-img bg-white p-2 p-lg-4 position-relative">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art04.jpg?raw=true" alt="artwork" class="img-fluid card-img-top">
+            <div class="artwork-img-button position-absolute">
+                <button class="btn-triangle bg-info p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+                <div class="triangle"></div>
             </div>
-          </div>
-        </li>
-      </ul>
-      <div class="recommend-button text-center">
-        <a href="#" class="btn btn-gradient text-white">所有課程列表</a>
+        </div>
+        <p class="py-3 border-bottom border-dark fw-bold">我這樣有美嗎</p>
       </div>
     </div>
-</section>
-<section class="info bg-primary">
-  <div class="container">
-    <ul class="row list-unstyled">
-      <li class="info-card info-card-a col-12 col-md-12 col-lg-3 px-36 py-40">
-        <div class="info-card-item">
-          <span class="material-icons fs-4">
-            forum
-            </span>
-          <h4 class="pb-3 fw-bold">對症下藥，專案製作</h4>
-          <p class="info-card-text">除了可以瘋狂提問之外<br>還有機會一起完成專案</p>
-        </div>
-      </li>
-      <li class="info-card info-card-b col-12 col-md-12 col-lg-3 px-36 py-40">
-        <span class="material-icons fs-4">
-          tips_and_updates
-          </span>
-        <h4 class="pb-3 fw-bold">激發你的學習潛力</h4>
-        <p class="info-card-text">進度制課程安排&個人化學習建議<br>有效管理你的學習動力</p>
-      </li>
-      <li class="info-card info-card-c col-12 col-md-12 col-lg-3 px-36 py-40">
-        <span class="material-icons fs-4">
-          thumb_up
-          </span>
-        <h4 class="pb-3 fw-bold">學習效率</h4>
-        <p class="info-card-text">針對學員狀況調整內容與步調<br>學習精準最有效</p>
-      </li>
-      <li class="info-card info-card-d col px-36 py-40">
-        <span class="material-icons fs-4">
-          supervisor_account
-          </span>
-        <h4 class="pb-3 fw-bold">一對一指導</h4>
-        <p class="info-card-text">針對目的進行客製化課程安排<br>快速的學以致用</p>
-      </li>
-    </ul>
-  </div>
-
-
-</section>
-<section class="artical py-40 bg-primary">
-  <h3 class="title-line px-14 py-3 text-center mb-md-5">文章分享</h3>
-  <div class="container">
-    <ul class="row list-unstyled align-items-center justify-content-between">
-      <li class="card border-0 col-lg-4 col-md-6 bg-primary">
-        <div class="card-body">
-          <img class="mb-3" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/article01.jpg" alt="artical">
-          <p class="mb-3 fz-18 fw-bold">2022 前端開發者學習地圖</p>
-          <p class="mb-3">轉職為前端的這條職業路上該如何發展？本篇為前端開發者提供學習地圖參考</p>
-          <p class="text-success text-end">MORE</p>
-        </div>  
-        <div class="square-rounded square-rounded-topLeft position-absolute top-0 start-0"></div>
-        <div class="square-rounded square-rounded-topRight position-absolute top-0 end-0"></div>
-        <div class="square-rounded square-rounded-bottomLeft position-absolute bottom-0 start-0 "></div>
-        <div class="square-rounded square-rounded-bottomRight position-absolute bottom-0 end-0"></div>
-      </li>
-      <li class="card border-0 col-lg-4 col-md-6 bg-primary">
-        <div class="card-body">
-          <img class="mb-3" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/article02.jpg" alt="artical">
-          <p class="mb-3 fz-18 fw-bold">2022 前端開發者學習地圖</p>
-          <p class="mb-3">轉職為前端的這條職業路上該如何發展？本篇為前端開發者提供學習地圖參考</p>
-          <p class="text-success text-end">MORE</p>
-        </div> 
-        <div class="square-rounded square-rounded-topLeft position-absolute top-0 start-0"></div>
-        <div class="square-rounded square-rounded-topRight position-absolute top-0 end-0"></div>
-        <div class="square-rounded square-rounded-bottomLeft position-absolute bottom-0 start-0 "></div>
-        <div class="square-rounded square-rounded-bottomRight position-absolute bottom-0 end-0"></div>
-      </li>
-      <li class="card border-0 col-lg-4 col-md-6 bg-primary">
-        <div class="card-body">
-          <img class="mb-3" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/article03.jpg" alt="artical">
-          <p class="mb-3 fz-18 fw-bold">2022 前端開發者學習地圖</p>
-          <p class="mb-3">轉職為前端的這條職業路上該如何發展？本篇為前端開發者提供學習地圖參考</p>
-          <p class="text-success text-end">MORE</p>
-        </div>  
-        <div class="square-rounded square-rounded-topLeft position-absolute top-0 start-0"></div>
-        <div class="square-rounded square-rounded-topRight position-absolute top-0 end-0"></div>
-        <div class="square-rounded square-rounded-bottomLeft position-absolute bottom-0 start-0 "></div>
-        <div class="square-rounded square-rounded-bottomRight position-absolute bottom-0 end-0"></div>
-      </li>
-    </ul>
   </div>
 </section>
-<section class="feedback py-40">
-  <div class="container">
-    <h3 class="title-line mb-4 mb-md-5 px-14 py-3 text-center">專屬你的學習課程<br>超過 3000 位學員得到了程式超能力</h3>
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-8">
-          <div class="swiper feedback-swiper position-relative">
-            <div class="swiper-wrapper">
-              <!-- 第一位 -->
-              <div class="swiper-slide position-relative">
-                <div class="swiper-box position-absolute">
-                  <img class="swiper-box-img img-fluid border-radius"
-                  src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                  alt="share">
-                </div>
-                <!-- 回饋卡片 -->
-                <div class="swiper-card p-4 position-absolute bg-warning mb-32">
-                  <img class="swiper-card-img position- absolute" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/student01.jpg?raw=true" alt="student-img" width="100" height="100">
-                  <h4 class="mb-2 mb-md-3 fz-18 fw-bold">老師很有耐心</h4>
-                  <p class="mb-0">老師手把手的細心教學，用手繪圖，以淺顯易懂的方式，讓零網頁基礎的我也能快速了解網頁的架構與原理，學網頁變得有趣多了！</p>
-                </div>
-              </div>
-              <!-- 第二位 -->
-              <div class="swiper-slide position-relative">
-                <div class="swiper-box position-absolute">
-                  <img class="swiper-box-img img-fluid border-radius"
-                  src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                  alt="share">
-                </div>
-                <!-- 回饋卡片 -->
-                <div class="swiper-card p-4 position-absolute bg-warning mb-32">
-                  <img class="swiper-card-img position- absolute" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/student02.jpg?raw=true" alt="student-img" width="100" height="100">
-                  <h4 class="mb-2 mb-md-3 fz-18 fw-bold">老師很有耐心</h4>
-                  <p class="mb-0">老師手把手的細心教學，用手繪圖，以淺顯易懂的方式，讓零網頁基礎的我也能快速了解網頁的架構與原理，學網頁變得有趣多了！</p>
-                </div>
-              </div>
-              <!-- 第三位 -->
-              <div class="swiper-slide position-relative">
-                <div class="swiper-box position-absolute">
-                  <img class="swiper-box-img img-fluid border-radius"
-                  src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                  alt="share">
-                </div>
-                <!-- 回饋卡片 -->
-                <div class="swiper-card p-4 position-absolute bg-warning mb-32">
-                  <img class="swiper-card-img position- absolute" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/student03.jpg?raw=true" alt="student-img" width="100" height="100">
-                  <h4 class="mb-2 mb-md-3 fz-18 fw-bold">老師很有耐心</h4>
-                  <p class="mb-0">老師手把手的細心教學，用手繪圖，以淺顯易懂的方式，讓零網頁基礎的我也能快速了解網頁的架構與原理，學網頁變得有趣多了！</p>
-                </div>
-              </div>
-            </div>
-            <!-- 按鈕 -->
-            <div class="swiper-buttons d-flex align-items-center justify-content-center pt-32">
-              <span class="material-icons swiper-button-prev fs-md me-4 text-success">
-                west
-              </span>
-              <div class="swiper-pagination d-flex swiper-pagination-bullet">
-                <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
-                <span class="swiper-pagination-bullet"></span>
-                <span class="swiper-pagination-bullet"></span>
-              </div>
-              <span class="material-icons swiper-button-next fs-md link-primary ms-4 text-success">
-                east
-              </span>
-          </div>
-        </div>
+<section class="join">
+    <div class="container text-center">
+        <h2 class="mb-3 lh-50">Join Us</h2>
+        <p class="fz-20 fw-bold pb-40">創建並出售你的藝術品</p>
     </div>
-  </div>
-</section>
-<section class="join bg-dark">
-  <div class="container">
-    <div class="d-flex align-items-center justify-content-center">
-      <div class="join-box border-radius py-40 bg-primary text-center px-4 px-md-5 d-md-flex justify-content-md-between align-items-md-center">
-        <div class="join-icon">
-          <span class="material-icons" style="font-size: 103px; line-height: 80px" >
-            menu_book
-            </span>
-        </div>
-        <div class="join-box-item">
-          <h3 class="mb-4 mb-md-2 fz-24">加入我們成為導師</h3>
-          <p class="mb-4 mb-md-0">歡迎各大程式大神加入我們，用知識在世界留下一點影響力。</p>
-        </div>
-        <a class="btn btn-primary border-white text-white" href="#">立即預約</a>
-      </div>
+    <div class="border-bottom border-dark border-4 mb-2"></div>
+    <div class="border-bottom border-dark border-1"></div>
+    <div class="container text-center">
+        <ul class="list-unstyled row py-80 py-sm-5 gx-4">
+            <li class="col-12 col-md-6 col-lg-3 mb-5 mb-lg-0">
+            <i class="fa-2x nav-wallet fa-solid fa-wallet text-secondary mb-3"></i>
+            <h5 class="fz-18 mb-4">設置你的錢包</h5>
+            <p>設置好您選擇的錢包後<br>點擊右上角的錢包圖標進行連接</p>
+            </li>
+            <li class="col-12 col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <i class="fa-2x fas fa-pencil-ruler text-secondary mb-3"></i>
+                <h5 class="fz-18 mb-4">創建您的主頁</h5>
+                <p>註冊成為會員，編輯您的資料 <br>讓大家了解你</p>
+            </li>
+            <li class="col-12 col-md-6  col-lg-3 mb-5">
+                <i class="fa-2x fas fa-icons text-secondary mb-3 mb-lg-0"></i>
+                <h5 class="fz-18 mb-4">添加你的 NFT</h5>
+                <p>上傳你的作品<br>添加標題和描述</p>
+            </li>
+            <li class="col-12 col-md-6  col-lg-3">
+                <i class="fa-2x fas fa-tags text-secondary mb-3 mb-lg-0"></i>
+                <h5 class="fz-18 mb-4">列出它們出售</h5>
+                <p>選擇出售 NFT 的方式<br>並設定價格，等待有緣人</p>
+            </li>
+        </ul>
     </div>
-
-  </div>
 </section>
 
 
-
-    <footer class="py-4 bg-primary text-center">
-      <div class="container">
-      Coding Home © 2022 All Rights Reserved
+    <footer class="footer py-2 text-center bg-primary border-top border-dark border-1">
+      <div class="border-dark border-top border-4"></div>
+      <div class="container pt-4">
+        © ART NFT. All Rights Reserved
       </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js" ></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>

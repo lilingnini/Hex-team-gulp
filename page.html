@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary py-0 border-bottom border-dark">
+      <div class="container">
+          <a class="navbar-brand flex-grow-1" href="#"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/logo.svg" alt="logo"></a>
+          <div class="d-flex align-items-center">
+          <i class="fa-solid fa-magnifying-glass fs-4 me-4 d-lg-none"></i> 
+          <div class="d-flex justify-content-sm-between align-items-center">
+            <button class="navbar-toggler text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">              
+              <span class="navbar-toggler-icon text-dark"></span>
+            </div>
+          </div>
+        </button>
+        <div class="collapse navbar-collapse justify-content-md-end" id="navbarNav">
+          <div class="search-bar px-5 border-dark border-start d-none d-lg-block">
+            <form class="d-flex align-items-center">
+              <input class="form-control me-4 py-40 bg-primary border-primary border-0" type="search" placeholder="搜尋作品名稱、藝術家名稱" aria-label="Search">
+              <i class="fa-solid fa-magnifying-glass fs-4"></i> 
+            </form>
+          </div>
+          <ul class="navbar-nav">
+            <li class="nav-item border-dark border-start">
+              <a class="nav-link px-lg-5 py-40 text-center fw-bold text-dark" aria-current="page" href="#">探索</a>
+            </li>
+            <li class="nav-item  border-dark border-start">
+              <a class="nav-link px-lg-5 py-40 text-center fw-bold text-dark" href="#">市值</a>
+            </li>
+            <li class="nav-item border-dark border-start">
+              <a class="nav-link ps-lg-5 py-40 d-none d-lg-block" href="#"><i class="nav-wallet fa-solid fa-wallet text-dark"></i></a>
+              <a class="nav-link py-40 d-lg-none text-center fw-bold text-dark" href="#">連結錢包</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    
+<section class="artwork pt40 pb-80">
+    <div class="container">
+    <div class="row py-5" data-masonry='{"percentPosition": true }'>
+      <div class="col-6 col-md-6 col-lg-3 mb-5">
+        <div class="bg-white p-4">
+          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art09.jpg?raw=true" alt="" class="img-fluid card-img-top">
+        </div>
+        <p class="py-3 border-bottom border-dark fw-bold">區塊戀-他的私生活</p>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3 mb-5">
+        <div class="bg-white p-4">
+          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art10.jpg?raw=true" alt="" class="img-fluid card-img-top">
+        </div>
+        <p class="py-3 border-bottom border-dark fw-bold">夏娃的醜聞</p>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3 mb-5">
+        <div class="bg-white p-4">
+          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art02.jpg?raw=true" alt="" class="img-fluid card-img-top">
+        </div>
+        <p class="py-3 border-bottom border-dark fw-bold">藍色啤酒海</p>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3 mb-5">
+        <div class="bg-white p-4">
+          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art11.jpg?raw=true" alt="" class="img-fluid card-img-top">
+        </div>
+        <p class="py-3 border-bottom border-dark fw-bold">沒有人愛我</p>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3 mb-5">
+        <div class="bg-white p-4">
+          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art12.jpg?raw=true" alt="" class="img-fluid card-img-top">
+        </div>
+        <p class="py-3 border-bottom border-dark fw-bold">不哭不哭眼淚是珍珠</p>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3 mb-5">
+        <div class="bg-white p-4">
+          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art27.jpg?raw=true" alt="" class="img-fluid card-img-top">
+        </div>
+        <p class="py-3 border-bottom border-dark fw-bold">我真的受傷了</p>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3 mb-5">
+        <div class="bg-white p-4">
+          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art03.jpg?raw=true" alt="" class="img-fluid card-img-top">
+        </div>
+        <p class="py-3 border-bottom border-dark fw-bold">十分鐘就到</p>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3 mb-5">
+        <div class="card bg-white p-4">
+          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art04.jpg?raw=true" alt="" class="img-fluid card-img-top">
+        </div>
+        <p class="py-3 border-bottom border-dark fw-bold">我這樣有美嗎</p>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3 mb-5">
+        <div class="card bg-white p-4">
+          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art19.jpg?raw=true" alt="" class="img-fluid card-img-top">
+        </div>
+        <p class="py-3 border-bottom border-dark fw-bold">野小孩——叫你不要玩那個</p>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3 mb-5">
+        <div class="card bg-white p-4">
+          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art16.jpg?raw=true" alt="" class="img-fluid card-img-top">
+        </div>
+        <p class="py-3 border-bottom border-dark fw-bold">柔美的細胞小將</p>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3 mb-5">
+        <div class="card bg-white p-4">
+          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art15.jpg?raw=true" alt="" class="img-fluid card-img-top">
+        </div>
+        <p class="py-3 border-bottom border-dark fw-bold">心如止水——今天吃素</p>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3 mb-5">
+        <div class="card bg-white p-4">
+          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art06.jpg?raw=true" alt="" class="img-fluid card-img-top">
+        </div>
+        <p class="py-3 border-bottom border-dark fw-bold">每當夏天我吹著溫暖的風</p>
+      </div>
+    </div>
+  </div>
+</section>
+    <footer class="footer py-2 text-center bg-primary border-top border-dark border-1">
+      <div class="border-dark border-top border-4"></div>
+      <div class="container pt-4">
+        © ART NFT. All Rights Reserved
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js" ></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
