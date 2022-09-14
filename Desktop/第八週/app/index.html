@@ -1,0 +1,412 @@
+---
+title: Index
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<main class="recommend">
+    <div class="container">
+        <div class="recommend-box d-flex border border-dark bg-info">
+            <div class="recommend-title bg-dark pt-4 px-4 d-none d-md-block d-lg-block">
+                <h1 class="text-info">Recommend <span class="fs-6 lh-26">推薦系列</span></h1>
+            </div>
+            <div class="d-md-flex">
+                <div  class="recommend-card d-lg-flex">
+                    <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art01.jpg" alt="Kemus Wu">
+                    <div class="recommend-card-item px-md-4 pb-md-4">
+                        <h3 class="fz-18 mb-2">Kemus Wu</h2>
+                        <h2 class="fs-sm-4 mb-4 fw-bold">瞳孔:流動的脈絡</h3>
+                        <p>眼睛，總是吸引著我們的注意力，看、被看，也許眼睛裡有著從另一個世界看我們的世界。</p>
+                        <div class="recommend-card-btn d-flex justify-content-end align-items-md-end">
+                        <button class="btn-triangle bg-info p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+        <ul class="list-unstyled d-lg-flex flex-md-no-wrap border border-top-0 border-dark bg-info">
+            <li class="recommend-card-min d-lg-flex flex-lg-row-reverse">
+                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art02.jpg" alt="Kemus Wu">
+                <div class="recommend-card-min-item px-lg-4 d-flex flex-column justify-content-between">
+                    <h3 class="fz-18 mb-2">Joanne</h2>
+                    <h2 class="fs-sm-4 mb-4 fw-bold">海洋波度</h3>
+                    <p>海洋的奧秘向我們揭示了深不可測的一面，它的深度——反映了我們的恐懼、同時也吸引著我們。<br></br></p>
+                    <div class="recommend-card-btn d-flex justify-content-end align-items-md-end">
+                        <button class="btn-triangle bg-info p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+                    </div>
+                </div>
+            </li>
+            <li class="recommend-card-min d-lg-flex flex-lg-row-reverse">
+                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art21.jpg" alt="Kemus Wu">
+                <div class="recommend-card-min-item px-lg-4 d-flex flex-column justify-content-between">
+                    <h3 class="fz-18 mb-2">Michael</h2>
+                    <h2 class="fs-sm-4 mb-4 fw-bold">我家窗前的鳥</h3>
+                    <p>家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
+                    <div class="recommend-card-btn d-flex justify-content-end align-items-md-end">
+                        <button class="btn-triangle bg-info p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</main>
+<section class="ranking">
+    <div class="container">
+        <div class="d-flex justify-content-between  py-md-3 py-sm-2 border-bottom border-dark position-relative">
+            <div class="d-flex align-items-end">            
+                <h2 class="fs-1 fs-sm-2 me-md-3">Ranking</h2> 
+                <p class="fs-5 d-none d-md-block d-lg-block ">市價排行榜</p> 
+            </div>
+            <button class="btn-triangle bg-primary border-0 position-absolute bottom-0 end-0 p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+        </div>
+        <div class="ranking-box pt-4 pt-md-5">
+            <ul class="row g-lg-4 list-unstyled mb-md-4">
+                <li class="col-lg-4 col-md-12">
+                    <div class="ranking-card d-none  d-lg-block d-flex border border-dark bg-info p-0 position-relative">
+                        <div class="ranking-card-list text-center position-absolute top-0 left-0  border-dark"><p class="fs-2 px-2 py-2 bg-info border-bottom border-end border-dark">1</p></div>
+                        <div class="ranking-card-item">
+                            <div class="ranking-card-img position-relative ">
+                                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art04.jpg" alt="ranking" class="card-img-top">  
+                                <div class="ranking-card-button position-absolute bottom-0 end-0">
+                                    <button class="btn-triangle bg-info p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+                                    <div class="triangle"></div>
+                                </div>
+                            </div>
+                            <h3 class="fz-18 py-3 px-2 border-bottom border-dark">散步遇到的女人</h3>
+                            <div class="d-flex py-2 justify-content-between align-items-center">
+                                <p class="ps-2">Zoe Jiang</p>
+                                <i class="fa-brands fa-ethereum fs-6 pe-2">300</i>
+                            </div> 
+                        </div>
+                    </div>
+                </li>
+                <li class="col-lg-4 col-md-12">
+                    <div class="ranking-card d-none  d-lg-block d-flex border border-dark bg-info p-0 position-relative">
+                        <div class="ranking-card-list text-center position-absolute top-0 left-0  border-dark"><p class="fs-2 px-2 py-2 bg-info border-bottom border-end border-dark">2</p></div>  
+                        <div class="ranking-card-item">
+                            <div class="ranking-card-img position-relative ">
+                                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art05.jpg" alt="ranking" class="card-img-top">  
+                                <div class="ranking-card-button position-absolute bottom-0 end-0">
+                                    <button class="btn-triangle bg-info p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+                                    <div class="triangle"></div>
+                                </div>
+                            </div>
+                            <h3 class="fz-18 py-3 px-2 border-bottom border-dark">爆炸頭的母親</h3>
+                            <div class="d-flex py-2 justify-content-between align-items-center">
+                                <p class="ps-2">Yui</p>
+                                <i class="fa-brands fa-ethereum fs-6 pe-2">300</i>
+                            </div> 
+                        </div>
+                    </div>
+                </li>
+                <li class="col-lg-4 col-md-12">
+                    <div class="ranking-card d-none d-lg-block d-flex border border-dark bg-info p-0 position-relative">
+                        <div class="ranking-card-list text-center position-absolute top-0 left-0  border-dark"><p class="fs-2 px-2 py-2 bg-info border-bottom border-end border-dark" >3</p></div>
+                        <div class="ranking-card-item">
+                            <div class="ranking-card-img position-relative ">
+                                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art06.jpg" alt="ranking" class="card-img-top">  
+                                <div class="ranking-card-button position-absolute bottom-0 end-0">
+                                    <button class="btn-triangle bg-info p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+                                    <div class="triangle"></div>
+                                </div>
+                            </div>
+                            <h3 class="fz-18 py-3 px-2 border-bottom border-dark">夏天的時候</h3>
+                            <div class="d-flex py-2 justify-content-between align-items-center">
+                                <p class="ps-2">Bug Lin</p>
+                                <i class="fa-brands fa-ethereum fs-6 pe-2">300</i>
+                            </div> 
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+<!-- 小尺寸 -->
+            <ul  class="row g-4 list-unstyled">
+                <li class="col-12 col-md-6 col-lg-4" >
+                    <div class="ranking-card-min d-flex border border-dark bg-info  d-sm-flex align-items-center d-lg-none" >
+                        <div class="ranking-card-min-item d-flex align-items-center">
+                            <p class="px-2 py-4">1</p>
+                            <a href="#" class="d-block img-hover position-relative">
+                                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art04.jpg" alt="Zoe Jiang" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="ranking-card-text flex-grow-1">
+                            <h3 class="fz-18 p-lg-3 p-sm-2 border-bottom border-dark">散步遇到的女人</h3>
+                            <div class="d-flex py-2 justify-content-between align-items-center" width="275">
+                                <p class="px-3">Zoe Jiang</p>
+                                <i class="fa-brands fa-ethereum fs-6 pe-2">300</i>
+                            </div> 
+                        </div>
+                    </div>
+                </li>
+                <li class="col-12 col-md-6 col-lg-4" >
+                    <div class="ranking-card-min d-flex border border-dark bg-info d-flex align-items-center d-lg-none" >
+                        <div class="ranking-card-min-item d-flex align-items-center">
+                            <p class="px-2 py-4">2</p>
+                            <a href="#" class="d-block img-hover position-relative">
+                                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art05.jpg" alt="Zoe Jiang" class="img-fluid">
+                                <div class="triangle position-absolute"></div>
+                            </a>
+                        </div>
+                        <div class="ranking-card-text flex-grow-1">
+                            <h3 class="fz-18 p-lg-3 p-sm-2 border-bottom border-dark">爆炸頭的母親</h3>
+                            <div class="d-flex py-2 justify-content-between align-items-center" width="275">
+                                <p class="px-3">Yui</p>
+                                <i class="fa-brands fa-ethereum fs-6 pe-2">300</i>
+                            </div> 
+                        </div>
+                    </div>
+                </li>
+                <li class="col-12 col-md-6 col-lg-4" >
+                    <div class="ranking-card-min border border-dark bg-info d-flex align-items-center d-lg-none" >
+                        <div class="ranking-card-min-item d-flex align-items-center">
+                            <p class="px-2 py-4">3</p>
+                            <a href="#" class="d-block img-hover position-relative">
+                                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art06.jpg" alt="Zoe Jiang" class="img-fluid">
+                                <div class="triangle position-absolute"></div>
+                            </a>
+                        </div>
+                        <div class="ranking-card-text flex-grow-1">
+                            <h3 class="fz-18 p-lg-3 p-sm-2 border-bottom border-dark">夏天的時候</h3>
+                            <div class="d-flex py-2 justify-content-between align-items-center" width="275">
+                                <p class="px-3">Bug Lin</p>
+                                <i class="fa-brands fa-ethereum fs-6 pe-2">300</i>
+                            </div> 
+                        </div>
+                    </div>
+                </li>
+                <li class="col-12 col-md-6 col-lg-4" >
+                    <div class="ranking-card-min border border-dark bg-info  d-flex align-items-center" >
+                        <div class="ranking-card-min-item d-flex align-items-center">
+                            <p class="px-2 py-4">4</p>
+                            <a href="#" class="d-block img-hover position-relative">
+                                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art13.jpg" alt="Zoe Jiang" class="img-fluid">
+                                <div class="triangle position-absolute"></div>
+                            </a>
+                        </div>
+                        <div class="ranking-card-text flex-grow-1">
+                            <h3 class="fz-18 p-lg-3 p-sm-2 border-bottom border-dark">追求者送我的花</h3>
+                            <div class="d-flex py-2 justify-content-between align-items-center" width="275">
+                                <p class="px-3">Michael</p>
+                                <i class="fa-brands fa-ethereum fs-6 pe-2">300</i>
+                            </div> 
+                        </div>
+                    </div>
+                </li>
+                <li class="col-12 col-md-6 col-lg-4" >
+                    <div class="ranking-card-min border border-dark bg-info d-flex align-items-center" >
+                        <div class="ranking-card-min-item d-flex align-items-center">
+                            <p class="px-2 py-4">5</p>
+                            <a href="#" class="d-block img-hover position-relative">
+                                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art07.jpg" alt="Zoe Jiang" class="img-fluid">
+                                <div class="triangle position-absolute"></div>
+                            </a>
+                        </div>
+                        <div class="ranking-card-text flex-grow-1">
+                            <h3 class="fz-18 p-lg-3 p-sm-2 border-bottom border-dark">今天釣到的魚</h3>
+                            <div class="d-flex py-2 justify-content-between align-items-center" width="275">
+                                <p class="px-3">Wei JJ</p>
+                                <i class="fa-brands fa-ethereum fs-6 pe-2">300</i>
+                            </div> 
+                        </div>
+                    </div>
+                </li>
+                <li class="col-12 col-md-6 col-lg-4" >
+                    <div class="ranking-card-min border border-dark bg-info d-flex align-items-center" >
+                        <div class="ranking-card-min-item d-flex align-items-center">
+                            <p class="px-2 py-4">6</p>
+                            <a href="#" class="d-block img-hover position-relative">
+                                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art08.jpg" alt="Zoe Jiang" class="img-fluid">
+                                <div class="triangle position-absolute"></div>
+                            </a>
+                        </div>
+                        <div class="ranking-card-text flex-grow-1">
+                            <h3 class="fz-18 p-lg-3 p-sm-2 border-bottom border-dark">人生中的貓咪們</h3>
+                            <div class="d-flex py-2 justify-content-between align-items-center" width="275">
+                                <p class="px-3">Even Lai</p>
+                                <i class="fa-brands fa-ethereum fs-6 pe-2">300</i>
+                            </div> 
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+  
+    </div>
+
+</section>
+<section class="artist">
+    <div class="container">
+        <div class="d-flex justify-content-between py-md-3 py-sm-2 border-bottom border-dark position-relative mb-lg-5 mb-md-5 mb-4">
+            <div class="d-flex align-items-end">            
+                <h2 class="fs-1 fs-sm-2 me-md-3">Artist</h2> 
+                <p class="fs-5 d-none d-md-block d-lg-block ">熱門藝術家</p> 
+            </div>
+            <button class="btn-triangle bg-primary border-0 position-absolute bottom-0 end-0 p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+        </div>
+
+        <!-- swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper pb-lg-5">
+                <!-- <div class="swiper-slide">
+                    <div class="d-flex flex-column d-lg-block">
+                        <div class="swiper-box position-relative">
+                            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/artist01.jpg" alt="artist">
+                            <h3 class="text-white">Antony<br>Wu</h3>
+                            <button class="btn-triangle bg-info p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+                            <p class="bg-white d-lg-block d-md-block">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+                        </div>
+                        <p class="bg-white d-lg-none d-md-none">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+                    </div>
+                </div> -->
+              <div class="swiper-slide d-flex text-center">
+                <div class="d-flex flex-column d-lg-block">
+                    <div class="swiper-box position-relative">
+                        <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/artist01.jpg" alt="artist" class="img-fluid">
+                        <h3 >Antony<br>Wu</h3>
+                        <button class="btn-triangle bg-info p-0 position-absolute" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+                        <div class="triangle"></div>  
+                                  
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/artist02.jpg" alt="artist" class="img-fluid">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/artist01.jpg" alt="artist" class="img-fluid">
+            </div>
+              <div class="swiper-slide"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/artist05.jpg" alt="artist" class="img-fluid"></div>
+            </div>        
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>       
+<section class="artwork">
+    <div class="container">
+        <div class="d-flex justify-content-between  py-md-3 py-sm-2 border-bottom border-dark position-relative">
+            <div class="d-flex align-items-end">            
+                <h2 class="fs-1 fs-sm-2 me-md-3">Artwork</h2> 
+                <p class="fs-5 d-none d-md-block d-lg-block">最新藝術品</p> 
+            </div>
+            <button class="btn-triangle bg-primary border-0 position-absolute bottom-0 end-0 p-0" width="132"><a href="./page.html" class="fz-18 py-2 px-5" >more</a></button>
+        </div>
+    <div class="row py-5" data-masonry='{"percentPosition": true }'>
+      <div class="col-6 col-md-6 col-lg-3 mb-5">
+        <div class="artwork-img bg-white p-2 p-lg-4 position-relative">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art09.jpg?raw=true" alt="artwork" class="img-fluid card-img-top">
+            <div class="artwork-img-button position-absolute">
+                <button class="btn-triangle bg-info p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+                <div class="triangle"></div>        
+            </div>
+        </div>
+        <h4 class="fs-6 py-3 border-bottom border-dark fw-bold">區塊戀-他的私生活</h4>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3 mb-5">
+        <div class="artwork-img bg-white p-2 p-lg-4 position-relative">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art10.jpg?raw=true" alt="artwork" class="img-fluid card-img-top">
+            <div class="artwork-img-button position-absolute">
+                <button class="btn-triangle bg-info p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+                <div class="triangle"></div>
+            </div>
+        </div>
+        <p class="py-3 border-bottom border-dark fw-bold">夏娃的醜聞</p>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3 mb-5">
+        <div class="artwork-img bg-white p-2 p-lg-4 position-relative">
+          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art02.jpg?raw=true" alt="artwork" class="img-fluid card-img-top">
+          <div class="artwork-img-button position-absolute">
+            <button class="btn-triangle bg-info p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+            <div class="triangle"></div>
+        </div>
+        </div>
+        <p class="py-3 border-bottom border-dark fw-bold">藍色啤酒海</p>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3 mb-5">
+        <div class="artwork-img bg-white p-2 p-lg-4 position-relative">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art11.jpg?raw=true" alt="artwork" class="img-fluid card-img-top">
+            <div class="artwork-img-button position-absolute">
+                <button class="btn-triangle bg-info p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+                <div class="triangle"></div>
+            </div>
+        </div>
+        <p class="py-3 border-bottom border-dark fw-bold">沒有人愛我</p>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3 mb-5">
+        <div class="artwork-img bg-white p-2 p-lg-4 position-relative">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art12.jpg?raw=true" alt="artwork" class="img-fluid card-img-top">
+            <div class="artwork-img-button position-absolute">
+                <button class="btn-triangle bg-info p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+                <div class="triangle"></div>
+            </div>
+        </div>
+        <p class="py-3 border-bottom border-dark fw-bold">不哭不哭眼淚是珍珠</p>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3 mb-5">
+        <div class="artwork-img bg-white p-2 p-lg-4 position-relative">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art27.jpg?raw=true" alt="artwork" class="img-fluid card-img-top">
+            <div class="artwork-img-button position-absolute">
+                <button class="btn-triangle bg-info p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+                <div class="triangle"></div>
+            </div>
+        </div>
+        <p class="py-3 border-bottom border-dark fw-bold">我真的受傷了</p>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3 mb-5">
+        <div class="artwork-img bg-white p-2 p-lg-4 position-relative">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art03.jpg?raw=true" alt="artwork" class="img-fluid card-img-top">
+            <div class="artwork-img-button position-absolute">
+                <button class="btn-triangle bg-info p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+                <div class="triangle"></div>
+            </div>
+        </div>
+        <p class="py-3 border-bottom border-dark fw-bold">十分鐘就到</p>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3 mb-5">
+        <div class="artwork-img bg-white p-2 p-lg-4 position-relative">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art04.jpg?raw=true" alt="artwork" class="img-fluid card-img-top">
+            <div class="artwork-img-button position-absolute">
+                <button class="btn-triangle bg-info p-0" width="132"><a href="#" class="fz-18 py-2 px-5" >more</a></button>
+                <div class="triangle"></div>
+            </div>
+        </div>
+        <p class="py-3 border-bottom border-dark fw-bold">我這樣有美嗎</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="join">
+    <div class="container text-center">
+        <h2 class="mb-3 lh-50">Join Us</h2>
+        <p class="fz-20 fw-bold pb-40">創建並出售你的藝術品</p>
+    </div>
+    <div class="border-bottom border-dark border-4 mb-2"></div>
+    <div class="border-bottom border-dark border-1"></div>
+    <div class="container text-center">
+        <ul class="list-unstyled row py-80 py-sm-5 gx-4">
+            <li class="col-12 col-md-6 col-lg-3 mb-5 mb-lg-0">
+            <i class="fa-2x nav-wallet fa-solid fa-wallet text-secondary mb-3"></i>
+            <h5 class="fz-18 mb-4">設置你的錢包</h5>
+            <p>設置好您選擇的錢包後<br>點擊右上角的錢包圖標進行連接</p>
+            </li>
+            <li class="col-12 col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <i class="fa-2x fas fa-pencil-ruler text-secondary mb-3"></i>
+                <h5 class="fz-18 mb-4">創建您的主頁</h5>
+                <p>註冊成為會員，編輯您的資料 <br>讓大家了解你</p>
+            </li>
+            <li class="col-12 col-md-6  col-lg-3 mb-5">
+                <i class="fa-2x fas fa-icons text-secondary mb-3 mb-lg-0"></i>
+                <h5 class="fz-18 mb-4">添加你的 NFT</h5>
+                <p>上傳你的作品<br>添加標題和描述</p>
+            </li>
+            <li class="col-12 col-md-6  col-lg-3">
+                <i class="fa-2x fas fa-tags text-secondary mb-3 mb-lg-0"></i>
+                <h5 class="fz-18 mb-4">列出它們出售</h5>
+                <p>選擇出售 NFT 的方式<br>並設定價格，等待有緣人</p>
+            </li>
+        </ul>
+    </div>
+</section>
+

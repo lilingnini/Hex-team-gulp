@@ -1,0 +1,308 @@
+
+.recommend{
+  @include md{
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+  h1{
+    writing-mode: vertical-lr;
+    line-height: 50px;
+  }
+  &-card{
+  img{
+    width: 100%;
+      @include lg{
+        width: 58%;
+      }
+  }
+  &-item{
+    padding: 32px 12px;
+    @include md{
+      padding-top: 80px;
+    }
+  }
+  p{
+    margin-bottom: 24px;
+    @include md{
+      margin-bottom: 192px;
+    }
+  }
+}
+  &-card-min{
+    @include lg{
+    height: 340px;
+    }
+    img{
+      width: 100%;
+        @include lg{
+          object-fit: cover;
+          width: 50%;
+          height: 340px;
+        }
+    }
+    &-item{
+      padding: 24px 12px;
+      @include lg{
+        width: 50%;
+        padding-top: 48px;
+      }
+    }
+  }
+
+  a{
+    color: $dark;
+    &:hover{
+      color: #fff;
+      background: $secondary;
+    }
+  }
+
+}
+
+
+
+.ranking{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @include md{
+    padding-top: 0px;
+    padding-bottom: 80px;
+  }
+  &-card{
+    &-button{
+      display: none;
+      z-index: 10;
+    } 
+    &-img{
+      &:hover{
+        opacity: 0.7;
+      .ranking-card-button{
+        display: block;
+      }
+      } 
+    }  
+      &-list{
+        width: 64px;
+        height: 64px;
+        z-index: 10;
+      }
+      &-item{
+        img{
+          height: 374px;
+          object-fit: cover;
+          object-position: top;
+          position: relative;
+          }
+      }
+
+    &-min{
+      height: 90px;
+    img{
+      width: 87px; 
+      height: 88px;
+      background-size: contain;
+      background-position: center center;
+    }
+
+    &-text{
+      width: 62%;
+      @include md{
+        width: 38%;
+      }
+    }
+  }
+}
+}
+
+
+.artist{
+  .swiper{
+    width: 100%;
+    height: 100%;
+    &-wrapper{
+      @include lg{
+        display: flex;
+        align-items: center;
+      }
+    }
+    &-slide {
+      font-size: 18px;
+      background:transparent;
+      &-box{
+        height: auto;
+      }
+      button{
+        z-index: 10;
+        right: 8px;
+        bottom: 8px;
+        display: none;
+        z-index: 10;
+        @include lg{
+          right: 24px;
+          bottom: 24px;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 232px;
+        object-fit: contain;
+        @include lg{
+          height: 439px;
+        }
+      }
+      &-active{
+        @include lg{
+          width: 50%;
+        }
+      }
+      &-prev,&-next{
+        @include lg{
+          width: 25%;
+          img{
+            width: 262px;
+          }
+        }
+      }
+    }
+
+ 
+    // &-cover{
+    //   width: 100%;
+    //   height: 75%;
+    //   @include lg{
+    //     display: none;
+    //   }
+    //   h3{
+    //     font-size: 32px;
+    //     line-height: 34px;
+    //   }
+    //   @include lg{
+    //     height: 100%;
+    //     h3{
+    //       width: 258px;
+    //       font-size: 80px;
+    //       line-height: 85px;
+    //     }
+    //   }
+    // }
+    // &-card{
+    //   width: 100%;
+    //   opacity: 0.85;
+    //   @include lg{
+    //     display: none;
+    //   }
+    // }
+    &-pagination {
+      position: unset;
+      width: auto;
+      &-bullet {
+        background-color: $dark;
+        opacity: initial;
+        border-radius: 0px;
+        &-active {
+          background-color: $secondary;
+          width: 16px;
+          height: 8px;
+          border-radius: 0px;
+        }
+      }
+    }
+
+  }
+  }
+
+.artwork{
+  &-img{
+    &-button{
+      right: 8px;
+      bottom: 8px;
+      display: none;
+      z-index: 10;
+      @include lg{
+        right: 24px;
+        bottom: 24px;
+      }
+    }
+  
+    &:hover{
+      opacity: 0.7;
+      z-index: 1;
+      .artwork-img-button{
+        display: block;
+      }
+    }
+  }
+}
+
+.join{
+  i{
+    width: 46px;
+    height: 40px;
+  }
+}
+
+a{
+  color: $dark;
+  &:hover{
+    color: #fff;
+    background: $secondary;
+  }
+}
+
+
+
+.triangle{
+  right: 0;
+  bottom: 0;
+  display: none;
+  // 三角形的做法
+  width: 0;
+  height: 0;
+  border-right: 16px solid $secondary;
+  border-top: 16px solid transparent;
+}
+
+.img-hover {
+  &:hover {
+    &::after {
+      content: 'more';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: $dark;
+      opacity: 0.7;
+      color: $info;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .triangle {
+      display: block;
+      z-index: 1;
+    }
+  }
+}
+
+
+.btn-triangle{
+  position: relative;
+  &::after{
+      position: absolute;
+      content: "";
+      border-right: 16px solid $secondary;
+      border-top: 16px solid transparent;
+      right:0;
+      bottom:0;
+  }
+  &:hover{
+      &::after{
+          border-right: 16px solid $dark;
+      }
+  }
+}
+
+
+

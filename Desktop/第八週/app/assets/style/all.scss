@@ -1,0 +1,12 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../style/utils/variables";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "../style/utils/helpers";
+@import "../style/utils/mixin";
+
+@import "../style/base/base";
+@import "../style/layout/grid";
+
+
+@import "../style/layout/layout";
+@import './layout/index.scss';
